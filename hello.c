@@ -161,8 +161,6 @@ int main()
     // }
     // printf("\n");
 
-
-
     //  for( int i=0;i<3;i++)
     // {
     //      for( int j=0; j<=i;j++)
@@ -181,26 +179,52 @@ int main()
     //   }
     //   printf("\n");
     //  }
-     
+
+    // for (int i = 0; i < 3; i++)
+    // {
+    //     for (int j = 0; j <= i; j++)
+    //     {
+    //         printf(" ");
+    //     }
+    //     for (int k = 3; k > i; k--)
+    //     {
+    //         printf("*");
+    //     }
+    //     for (int m = 1; m >= i; m--)
+    //     {
+    //         printf("*");
+    //     }
+
+    //     printf("\n");
+    // }
+
+
+    int n;
+    printf("Enter the  nnumber of n:");
+    scanf("%d",&n);
+
+
+for( int i=1;i<n;i++)
+{
+    for( int j=1;j<=i;j++)
+ {
+    printf("*");
+ }   
+ for( int j=1;j<=2*(n-i);j++)
+ {
+    printf(" ");
+ }
+ for( int j=1;j<=i;j++)
+ {
+    printf("*");
+ }
+ printf("\n");
+}
 
 
 
 
-    for (int i = 0; i < 3; i++)
-    {
-        for (int j = 0; j <= i; j++)
-        {
-            printf(" ");
-        }
-            for (int k = 3; k > i; k--)
-            {
-                printf("*");
-            }
-            for (int m = 1; m >= i; m--)
-            {
-                printf("*");
-            }
-        
-        printf("\n");
-    }
+
+
+
 }
