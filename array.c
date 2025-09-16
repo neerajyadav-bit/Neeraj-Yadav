@@ -136,25 +136,47 @@ int main()
     //     printf("nahi hai");
     // }
 
-    int arr[5] = {1, 2, 7, 2, 1};
-    int i;
-    int j;
-    int check = 1;
-    for (i = 0; i < 5 / 2; i++)
+    //     int arr[5] = {1, 2, 7, 2, 1};
+    //     int i;
+    //     int j;
+    //     int check = 1;
+    //     for (i = 0; i < 5 / 2; i++)
 
+    //     {
+    //         if (arr[i] == arr[5 - 1 - i])
+    //         {
+    //             check = 0;
+    //         }
+    //     }
+
+    //     if (check)
+    //     {
+    //         printf("hai ");
+    //     }
+    //     else
+    //     {
+    //         printf("nahi hai");
+    //     }
+    // }
+
+    int arr[5], i, temp;
+    printf("Enter 5 Elements\n");
+    for (i = 0; i < 5; i++)
     {
-        if (arr[i] == arr[5 - 1 - i])
-        {
-            check = 0;
-        }
+        scanf("%d", &arr[i]);
     }
 
-    if (check)
+    for (i = 0;i<5/2;i++)
     {
-        printf("hai ");
+        temp = arr[i];
+        arr[i] = arr[5 - 1 - i];
+        arr[5 - 1 - i] = temp;
     }
-    else
+    printf("Reverse Array\n");
+    for (i = 0; i < 5; i++)
     {
-        printf("nahi hai");
+
+        printf("%d\n",arr[i]);
     }
+    return 0;
 }
