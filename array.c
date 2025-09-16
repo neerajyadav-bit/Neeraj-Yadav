@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    int arr[5] = {1, 2, 3, 4, 5};
+    // int arr[5] = {1, 2, 3, 4, 5};
     // for( int i=0;i<5;i++){
     //     printf("%d\n",arr[i]);
     // }
@@ -71,7 +71,6 @@ int main()
     //         printf("%d" ,arr[i]);
     //     }
 
-
     // int target = 5;
 
     // for (int i = 0; i < 5; i++)
@@ -88,6 +87,74 @@ int main()
     //     if (arr[i] ==)
     //     {
     //         printf("%d\n", arr[i]);
-//     //     }
-//     }
-// }
+    //     //     }
+    //     }
+    // }
+
+    // int arr[7] = {1, 3, 4, 6, -5, 5, 1};
+    // int k = 7;
+    // for (int i = 0; i < 7; i++)
+    // {
+    //     for (int j = 0; j < 7; j++)
+    //     {
+    //         if (arr[i] + arr[j] == k)
+    //         {
+    //             printf("%d %d", i, j);
+    //             break;
+    //         }
+    //     }
+    //}
+
+    // int arr[5] = {1, 2, 3, 4, 5};
+    // int i;
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     if (arr[i] < 9)
+    //     {
+    //         printf("%d\n", arr[i]);
+    //     }
+    // }
+
+    // int arr[5]={1,2,3,2,1};
+    // int i;
+    // int j;
+    // int check=1;
+    // for(i=0;i<5/2;i++)
+
+    // {
+    //    if(arr[i]!=arr[5-1-i])
+    //    {
+    //     check=0;
+    //    }
+
+    // }
+
+    // if(check){
+    //     printf("hai ");
+
+    // }else{
+    //     printf("nahi hai");
+    // }
+
+    int arr[5] = {1, 2, 7, 2, 1};
+    int i;
+    int j;
+    int check = 1;
+    for (i = 0; i < 5 / 2; i++)
+
+    {
+        if (arr[i] == arr[5 - 1 - i])
+        {
+            check = 0;
+        }
+    }
+
+    if (check)
+    {
+        printf("hai ");
+    }
+    else
+    {
+        printf("nahi hai");
+    }
+}
