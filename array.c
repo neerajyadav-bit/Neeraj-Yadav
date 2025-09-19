@@ -1,6 +1,6 @@
 #include <stdio.h>
-// int main()
-// {
+int main()
+{
 // int arr[5] = {1, 2, 3, 4, 5};
 // for( int i=0;i<5;i++){
 //     printf("%d\n",arr[i]);
@@ -180,6 +180,7 @@
 //     }
 //     return 0;
 // }
+//---------------------------------------------------------------------------------------------------------------
 // int maxArraysum(int arr[], int n, int k)
 // {
 //     int maxSum = 0;
@@ -203,24 +204,46 @@
 //     int k=3;
 //     int n;
 // }
+// //---------------------------------------------------------------------------------------------------------------
+// int main()
+// {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 
-int main()
-{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+//     int arr[5] = {-8, 2, -3, 4, 9};
+//     int maxSum = 0;
+//     for (int i = 0; i < 5; i++)
+//     {
+//         int curSum = 0;
+//         for (int j = i; j < 5; j++)
+//         {
+//             curSum = curSum + arr[j];
+//             if (curSum > maxSum)
+//             {
+//                 maxSum = curSum;
+//             }
+// //         }
+//     }
+//     printf("%d", maxSum);
+//     return 0;
+// }
 
-    int arr[5] = {-8, 2, -3, 4, 9};
-    int maxSum = 0;
-    for (int i = 0; i < 5; i++)
-    {
-        int curSum = 0;
-        for (int j = i; j < 5; j++)
-        {
-            curSum = curSum + arr[j];
-            if (curSum > maxSum)
-            {
-                maxSum = curSum;
-            }
-        }
-    }
-    printf("%d", maxSum);
-    return 0;
+
+
+ int arr[5]={ 1,3,4,5,6};
+ for( int  i=0;i<6;i++)
+ {
+for( int j=0;j<6;j++)
+{
+    int temp=arr[i];
+    arr[i]=arr[i+1];
+    arr[i+1]=temp;
+
+}
+printf("%d %d",i ,j);
+ }
+int arr[5]={ 1,4,5,65,3};
+int n= Sizeof(arr)/Sizeof(int);
+for( int i=0;i<n-1;i++)
+
+for (int j=0;j<n-i-1;j++)
+{
 }
